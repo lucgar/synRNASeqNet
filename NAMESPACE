@@ -1,0 +1,7 @@
+exportPattern("^[[:alpha:]]+")
+
+importFrom(parallel, detectCores, makeCluster, clusterExport, parSapply, stopCluster)
+importFrom(parmigene, knnmi.all, knnmi.cross)
+importFrom(minet, validate, aracne, clr, mrnet)
+importFrom(GenKern, KernSec, KernSur)
+importFrom(igraph, barabasi.game, erdos.renyi.game)

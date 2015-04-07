@@ -1,0 +1,47 @@
+\name{Likelihoods}
+\alias{Likelihoods}
+\title{
+  Likelihood Indices
+}
+\description{
+  The Likelihood Indices accomodate both sensitivity and specificity, but treat
+  them separately.
+}
+\usage{
+Likelihoods(resTable)
+}
+\arguments{
+  \item{resTable}{
+    the data.frame generated from the \code{performanceNET} (or one of the row
+    of the matrix generated from the \code{performanceIndex}) function.
+  }
+}
+\value{
+  The \code{Likelihoods} function returns the value of the Likelihood Indices
+  (rho - pos or neg) for a given predicted adjacency matrix.
+}
+\author{
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+}
+\references{
+  Sokolova M., Japkowicz N., Szpakowicz S. (2006). Beyond Accuracy, F-Score and
+  ROC: A Family of Discriminant Measures for Performance Evaluation. \emph{Lecture
+  Notes in Computer Science} Volume 4304, 2006, pp 1015-1021.
+}
+\seealso{
+  \code{\link[synRNASeqNet:YoudenIndex]{YoudenIndex},
+  \link[synRNASeqNet:DiscriminantPower]{DiscriminantPower}}
+}
+\examples{
+simData <- simulatedData(p = 10, n = 20, mu = 100, sigma = 0.25, ppower = 0.73, noise = FALSE)
+counts <- simData$counts
+adjMat <- simData$adjMat
+
+miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 25)
+require(minet)
+miML <- aracne(miML, eps = 0.5)
+
+valML <- performanceNET(miML, adjMat)
+LH <- Likelihoods(valML)
+}
+\keyword{Likelihoods}
