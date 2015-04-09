@@ -3,38 +3,47 @@
 \alias{synRNASeqNet}
 \docType{package}
 \title{
-What the package does (short line)
-~~ package title ~~
+  Synthetic RNA-Seq Network Generation and Mutual Information Estimates
 }
 \description{
-More about what it does (maybe more than one line)
-~~ A concise (1-5 lines) description of the package ~~
+  This package implements various estimators of mutual information, such
+  as the maximum likelihood and the Millow-Madow estimator, various Bayesian estimators,
+	the shrinkage estimator, and the Chao-Shen estimator. It also offers wrappers
+	to the kNN and kernel density estimators.
+  
+	Furthermore, it provides various index of performance evaluation such as
+	precision, recall, FPR, F-Score, ROC-PR Curves and so on.
+  
+	Lastly, it provides a brand new way of generatic synthetic RNA-Seq Network with know
+	dependence structure.
 }
-\details{
-\tabular{ll}{
-Package: \tab synRNASeqNet\cr
-Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2015-04-07\cr
-License: \tab What license is it under?\cr
-}
-~~ An overview of how to use the package, including the most important functions ~~
-}
-\author{
-Who wrote it
 
-Maintainer: Who to complain to <yourfault@somewhere.net>
-~~ The author and/or maintainer of the package ~~
+\section{Index}{
+  
+  \tabular{ll}{
+    \link[synRNASeqNet:synRNASeqNet-package]{synRNASeqNet-package}: \tab Synthetic RNA-Seq Network Generation and Mutual Information Estimates\cr
+    \link[synRNASeqNet:parMIEstimate]{parMIEstimate}: \tab Parallel Mutual Information Estimation\cr
+    \link[synRNASeqNet:parEntropyEstimate]{parEntropyEstimate}: \tab Parallel Entropy Estimation\cr
+    \link[synRNASeqNet:entropyML]{entropyML}: \tab Maximum Likelihood Entropy Estimate\cr
+    \link[synRNASeqNet:entropyMM]{entropyMM}: \tab Miller-Madow corrected Entropy Estimate\cr
+    \link[synRNASeqNet:entropyBayes]{entropyBayes}: \tab Bayesian Entropy Estimate\cr
+    \link[synRNASeqNet:entropyCS]{entropyCS}: \tab Chao-Shen Entropy Estimate\cr
+    \link[synRNASeqNet:entropyShrink]{entropyShrink}: \tab James-Stein Shrinkage Entropy Estimate\cr
+    \link[synRNASeqNet:parMIKD]{parMIKD}: \tab Parallel Kernel Density Mutual Information Estimate\cr
+    \link[synRNASeqNet:simulatedData]{simulatedData}: \tab Random Generation Networks for RNA-Seq Data\cr
+    \link[synRNASeqNet:mainNetFunction]{mainNetFunction}: \tab Main Estimation and Evaluation Function\cr
+    \link[synRNASeqNet:plotROC]{plotROC}: \tab Plot ROC Curve\cr
+    \link[synRNASeqNet:plotPR]{plotPR}: \tab Plot PR Curve\cr
+    \link[synRNASeqNet:aucDisc]{aucDisc}: \tab Calculate Area Under a (ROC/PR) Curve\cr
+    \link[synRNASeqNet:performanceIndex]{performanceIndex}: \tab Evalutate Performance Indices\cr
+    \link[synRNASeqNet:performanceNET]{performanceNET}: \tab Evalutate Performance Indices\cr
+    \link[synRNASeqNet:YoudenIndex]{YoudenIndex}: \tab Youden's Index\cr
+    \link[synRNASeqNet:Likelihoods]{Likelihoods}: \tab Likelihood Indices\cr
+    \link[synRNASeqNet:DiscriminantPower]{DiscriminantPower}: \tab Discriminant Power\cr
+  }
 }
-\references{
-~~ Literature or other references for background information ~~
+
+\author{
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
 }
-~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R documentation directory ~~
-\keyword{ package }
-\seealso{
-~~ Optional links to other man pages, e.g. ~~
-~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
-}
-\examples{
-~~ simple examples of the most important functions ~~
-}
+\keyword{package}
