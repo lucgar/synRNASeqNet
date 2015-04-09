@@ -1,4 +1,4 @@
-export(.beta_k, .diagId, .getTask, .shrinkageIntensity, .startId, .thetaBayes, .thetaGT, .thetaML, .thetaShrink)
+exportPattern("^[[:alpha:]]+")
 
 importFrom(parallel, detectCores, makeCluster, clusterExport, parSapply, stopCluster)
 importFrom(parmigene, knnmi.all, knnmi.cross)
