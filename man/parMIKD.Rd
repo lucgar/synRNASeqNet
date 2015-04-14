@@ -25,7 +25,7 @@ parMIKD(idx)
   that pair of genes \code{I(X,Y)}.
 }
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \references{
   Moon Y., Rajagopalan B., Lall U. (1995). Estimation of mutual information using
@@ -40,6 +40,6 @@ simData <- simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25, ppower = 0.73,
 counts <- simData$counts
 adjMat <- simData$adjMat
 
-miKD <- parMIEstimate(counts, method = "KD", nchips = 25)
+miKD <- parMIEstimate(counts, method = "KD", nchips = 2)
 }
 \keyword{parMIKD}

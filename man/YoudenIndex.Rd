@@ -20,7 +20,7 @@ YoudenIndex(resTable)
   given predicted adjacency matrix.
 }
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \references{
   Sokolova M., Japkowicz N., Szpakowicz S. (2006). Beyond Accuracy, F-Score and
@@ -36,7 +36,7 @@ simData <- simulatedData(p = 10, n = 20, mu = 100, sigma = 0.25, ppower = 0.73, 
 counts <- simData$counts
 adjMat <- simData$adjMat
 
-miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 25)
+miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 2)
 require(minet)
 miML <- aracne(miML, eps = 0.5)
 

@@ -44,6 +44,6 @@
 }
 
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \keyword{package}

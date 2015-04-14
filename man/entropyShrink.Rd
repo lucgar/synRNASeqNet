@@ -28,7 +28,7 @@ entropyShrink(cellCounts, unit = unit, shrinkageTarget = shrinkageTarget)
   \code{H(X)} (or pair of genes \code{H(X,Y)}).
 }
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \references{
   James W., Stein C. (1961). Estimation with Quadratic Loss. \emph{Proceedings

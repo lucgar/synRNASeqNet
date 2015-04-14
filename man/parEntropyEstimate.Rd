@@ -54,7 +54,7 @@ parEntropyEstimate(idx, method = method, unit = unit, priorHyperParam = priorHyp
   that pair of genes \code{H(X,Y)}.
 }
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \references{
   Paniski L. (2003). Estimation of Entropy and Mutual Information. \emph{Neural

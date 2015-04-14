@@ -66,7 +66,7 @@ parMIEstimate(counts, method = c("ML", "MM", "Bayes", "CS", "Shrink", "KD", "KNN
   of rows equal to the length of \code{tfList}.
 }
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \references{
   Paniski L. (2003). Estimation of Entropy and Mutual Information. \emph{Neural
@@ -133,15 +133,15 @@ simData <- simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25, ppower = 0.73,
 counts <- simData$counts
 adjMat <- simData$adjMat
 
-miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 25)
-miMM <- parMIEstimate(counts, method = "MM", unit = "nat", nchips = 25)
-miBJ <- parMIEstimate(counts, method = "Bayes", unit = "nat", nchips = 25, priorHyperParam = "Jeffreys")
-miBB <- parMIEstimate(counts, method = "Bayes", unit = "nat", nchips = 25, priorHyperParam = "BLUnif")
-miBP <- parMIEstimate(counts, method = "Bayes", unit = "nat", nchips = 25, priorHyperParam = "Perks")
-miBM <- parMIEstimate(counts, method = "Bayes", unit = "nat", nchips = 25, priorHyperParam = "MiniMax")
-miCS <- parMIEstimate(counts, method = "CS", unit = "nat", nchips = 25)
-miSH <- parMIEstimate(counts, method = "Shrink", unit = "nat", nchips = 25)
-miKD <- parMIEstimate(counts, method = "KD", nchips = 25)
-miKNN <- parMIEstimate(counts, method = "KNN", unit = "nat", k = 3, nchips = 25)
+miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 2)
+miMM <- parMIEstimate(counts, method = "MM", unit = "nat", nchips = 2)
+miBJ <- parMIEstimate(counts, method = "Bayes", unit = "nat", nchips = 2, priorHyperParam = "Jeffreys")
+miBB <- parMIEstimate(counts, method = "Bayes", unit = "nat", nchips = 2, priorHyperParam = "BLUnif")
+miBP <- parMIEstimate(counts, method = "Bayes", unit = "nat", nchips = 2, priorHyperParam = "Perks")
+miBM <- parMIEstimate(counts, method = "Bayes", unit = "nat", nchips = 2, priorHyperParam = "MiniMax")
+miCS <- parMIEstimate(counts, method = "CS", unit = "nat", nchips = 2)
+miSH <- parMIEstimate(counts, method = "Shrink", unit = "nat", nchips = 2)
+miKD <- parMIEstimate(counts, method = "KD", nchips = 2)
+miKNN <- parMIEstimate(counts, method = "KNN", unit = "nat", k = 3, nchips = 2)
 }
 \keyword{parMIEstimate}

@@ -19,7 +19,7 @@ plotROC(piNet, ...)
   }
 }
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \seealso{
   \code{\link[synRNASeqNet:plotPR]{plotPR}}
@@ -32,6 +32,6 @@ adjMat <- simData$adjMat
 miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 25)
 valML <- performanceIndex(miML, adjMat)
 
-plotROC(valML)
+plotROC(valML, col = "red")
 }
 \keyword{plotROC}

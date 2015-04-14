@@ -24,7 +24,7 @@ entropyCS(cellCounts, unit = unit)
   \code{H(X)} (or pair of genes \code{H(X,Y)}).
 }
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \references{
   Chao A., Shen T.J. (2003). Nonparametric estimation of Shannon's index diversity

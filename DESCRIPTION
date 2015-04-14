@@ -3,7 +3,7 @@ Type: Package
 Title: Synthetic RNA-Seq Network Generation and Mutual Information Estimates
 Version: 1.0
 Date: 2015-04-07
-Author: Luciano Garofano, Michele Ceccarelli
+Author: Luciano Garofano, Stefano Maria Pagnotta, Michele Ceccarelli
 Maintainer: Luciano Garofano <lucianogarofano88@gmail.com>
 Depends: R (>= 3.1.1), parallel, parmigene, GenKern, minet, igraph
 Imports:

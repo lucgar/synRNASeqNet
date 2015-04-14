@@ -45,7 +45,7 @@ mainNetFunction(counts, adjMat, nchips, plotPath = "", tfList = NULL)
   }
 }
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \references{
   Stehman, S.V. (1997). Selecting and interpreting measures of thematic classification
@@ -59,6 +59,6 @@ simData <- simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25, ppower = 0.73,
 counts <- simData$counts
 adjMat <- simData$adjMat
 
-netData <- mainNetFunction(counts, adjMat, nchips = 25)
+netData <- mainNetFunction(counts, adjMat, nchips = 2)
 }
 \keyword{mainNetFunction}

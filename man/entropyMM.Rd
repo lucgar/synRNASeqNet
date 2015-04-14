@@ -24,7 +24,7 @@ entropyMM(cellCounts, unit = unit)
   \code{H(X)} (or pair of genes \code{H(X,Y)}).
 }
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \references{
   Miller G.A. (1955). Note on the bias of information estimates. \emph{Information

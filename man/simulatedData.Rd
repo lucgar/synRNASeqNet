@@ -46,7 +46,7 @@ simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25, ppower = 1, noise = F, se
   }
 }
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \references{
   Barabasi A.L., Albert R. (1999). Emergence of scaling in random networks.

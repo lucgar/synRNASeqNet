@@ -25,7 +25,7 @@
   The \code{aucDisc} returns a real number representing the Area Under the given Curve.
 }
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \references{
    Swets, J.A. (1996). Signal detection theory and ROC analysis in psychology
@@ -40,7 +40,7 @@ simData <- simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25, ppower = 0.73,
 counts <- simData$counts
 adjMat <- simData$adjMat
 
-miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 25)
+miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 2)
 valML <- performanceIndex(miML, adjMat)
 
 AUROC <- aucDisc(valML[, "FPR"], valML[, "Recall"])

@@ -30,7 +30,7 @@ entropyBayes(cellCounts, unit = unit, priorHyperParam = priorHyperParam)
   \code{H(X)} (or pair of genes \code{H(X,Y)}).
 }
 \author{
-  Luciano Garofano \email{lucianogarofano88@gmail.com}, Michele Ceccarelli
+  Luciano Garofano \email{lucianogarofano88@gmail.com}, Stefano Maria Pagnotta, Michele Ceccarelli
 }
 \references{
   Jeffreys H. (1946). An invariant form for the prior probability in estimation
