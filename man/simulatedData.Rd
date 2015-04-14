@@ -9,7 +9,8 @@
   distribution) that encode the underlying graph structure.
 }
 \usage{
-simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25, ppower = 1, noise = F, seed = NULL)
+simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25, ppower = 1,
+              noise = F, seed = NULL)
 }
 \arguments{
   \item{p}{
@@ -59,7 +60,8 @@ simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25, ppower = 1, noise = F, se
   \code{\link[synRNASeqNet:mainNetFunction]{mainNetFunction}}
 }
 \examples{
-simData <- simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25, ppower = 0.73, noise = FALSE)
+simData <- simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25,
+                        ppower = 0.73, noise = FALSE)
 plot(simData$graph)
 
 counts <- simData$counts

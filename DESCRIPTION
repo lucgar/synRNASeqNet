@@ -6,7 +6,8 @@ Date: 2015-04-07
 Author: Luciano Garofano, Stefano Maria Pagnotta, Michele Ceccarelli
 Maintainer: Luciano Garofano <lucianogarofano88@gmail.com>
 Depends: R (>= 3.1.1), parallel, parmigene, GenKern, minet, igraph
-Imports:
+URL: https://github.com/lucgar/synRNASeqNet
+Imports: KernSmooth
 Description: This package implements various estimators of mutual information, such
 	as the maximum likelihood and the Millow-Madow estimator, various Bayesian estimators,
 	the shrinkage estimator, and the Chao-Shen estimator. It also offers wrappers

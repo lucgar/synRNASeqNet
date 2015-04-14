@@ -25,11 +25,12 @@ plotROC(piNet, ...)
   \code{\link[synRNASeqNet:plotPR]{plotPR}}
 }
 \examples{
-simData <- simulatedData(p = 10, n = 20, mu = 100, sigma = 0.25, ppower = 0.73, noise = FALSE)
+simData <- simulatedData(p = 10, n = 20, mu = 100, sigma = 0.25,
+                        ppower = 0.73, noise = FALSE)
 counts <- simData$counts
 adjMat <- simData$adjMat
 
-miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 25)
+miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 2)
 valML <- performanceIndex(miML, adjMat)
 
 plotROC(valML, col = "red")

@@ -35,7 +35,8 @@ entropyMM(cellCounts, unit = unit)
   \link[synRNASeqNet:entropyMM]{entropyCS}, \link[synRNASeqNet:entropyMM]{entropyShrink}}
 }
 \examples{
-simData <- simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25, ppower = 0.73, noise = FALSE)
+simData <- simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25,
+                        ppower = 0.73, noise = FALSE)
 cellCounts <- table(simData$counts[1, ])
 eMM <- entropyMM(cellCounts, unit = "nat")
 }

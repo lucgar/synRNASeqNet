@@ -8,7 +8,8 @@
   specified ones) of matrix \code{counts} using the indirect methods.
 }
 \usage{
-parEntropyEstimate(idx, method = method, unit = unit, priorHyperParam = priorHyperParam,
+parEntropyEstimate(idx, method = method, unit = unit,
+                  priorHyperParam = priorHyperParam,
                    shrinkageTarget = shrinkageTarget, boot = boot)
 }
 \arguments{
@@ -16,8 +17,8 @@ parEntropyEstimate(idx, method = method, unit = unit, priorHyperParam = priorHyp
     the index of the cell which corresponds to the interaction going to be esimated.
   }
   \item{method}{
-    a character string indicating which estimate is to be computed. One of
-    \code{"ML"} (Maximum Likelihood Estimator, default), \code{"MM"} (Miller-Madow
+    a character string indicating which estimate is to be computed.
+    One of \code{"ML"} (Maximum Likelihood Estimator, default), \code{"MM"} (Miller-Madow
     corrected Estimator), \code{"Bayes"} (Bayesian Estimators), \code{"CS"}
     (Chao-Shen Estimator), \code{"Shrink"} (James-Stein shrinkage Estimator),
     \code{"KD"} (kernel Density Estimator), or \code{"KNN"} (k-Nearest Neighbor

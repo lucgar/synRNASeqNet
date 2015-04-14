@@ -33,13 +33,11 @@ performanceNET(predAdjMat, valAdjMat)
 \seealso{
   \code{\link[synRNASeqNet:simulatedData]{simulatedData},
   \link[synRNASeqNet:mainNetFunction]{mainNetFunction},
-  \link[synRNASeqNet:performanceIndex]{performanceIndex},
-  \link[synRNASeqNet:YoudenIndex]{YoudenIndex},
-  \link[synRNASeqNet:Likelihoods]{Likelihoods},
-  \link[synRNASeqNet:DiscriminantPower]{DiscriminantPower}}
+  \link[synRNASeqNet:performanceIndex]{performanceIndex}}
 }
 \examples{
-simData <- simulatedData(p = 10, n = 20, mu = 100, sigma = 0.25, ppower = 0.73, noise = FALSE)
+simData <- simulatedData(p = 10, n = 20, mu = 100, sigma = 0.25,
+                        ppower = 0.73, noise = FALSE)
 counts <- simData$counts
 adjMat <- simData$adjMat
 

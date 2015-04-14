@@ -31,7 +31,8 @@ DiscriminantPower(resTable)
   \code{\link[synRNASeqNet:YoudenIndex]{YoudenIndex}, \link[synRNASeqNet:Likelihoods]{Likelihoods}}
 }
 \examples{
-simData <- simulatedData(p = 10, n = 20, mu = 100, sigma = 0.25, ppower = 0.73, noise = FALSE)
+simData <- simulatedData(p = 10, n = 20, mu = 100, sigma = 0.25,
+                        ppower = 0.73, noise = FALSE)
 counts <- simData$counts
 adjMat <- simData$adjMat
 

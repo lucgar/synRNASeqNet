@@ -8,10 +8,11 @@
   specified ones) of matrix \code{counts} using 10 different estimation methods.
 }
 \usage{
-parMIEstimate(counts, method = c("ML", "MM", "Bayes", "CS", "Shrink", "KD", "KNN"),
-              unit = c("bit", "ban", "nat"), nchips, priorHyperParam =
-              c("Jeffreys", "BLUnif", "Perks", "MiniMax"), shrinkageTarget,
-              k = 3, tfList = NULL, boot = F)
+parMIEstimate(counts,
+              method = c("ML", "MM", "Bayes", "CS", "Shrink", "KD", "KNN"),
+              unit = c("bit", "ban", "nat"), nchips,
+              priorHyperParam = c("Jeffreys", "BLUnif", "Perks", "MiniMax"),
+              shrinkageTarget, k = 3, tfList = NULL, boot = F)
 }
 \arguments{
   \item{counts}{
@@ -19,8 +20,8 @@ parMIEstimate(counts, method = c("ML", "MM", "Bayes", "CS", "Shrink", "KD", "KNN
     on rows and samples on columns).
   }
   \item{method}{
-    a character string indicating which estimate is to be computed. One of
-    \code{"ML"} (Maximum Likelihood Estimator, default), \code{"MM"} (Miller-Madow
+    a character string indicating which estimate is to be computed.
+    One of \code{"ML"} (Maximum Likelihood Estimator, default), \code{"MM"} (Miller-Madow
     corrected Estimator), \code{"Bayes"} (Bayesian Estimators), \code{"CS"}
     (Chao-Shen Estimator), \code{"Shrink"} (James-Stein shrinkage Estimator),
     \code{"KD"} (kernel Density Estimator), or \code{"KNN"} (k-Nearest Neighbor
@@ -129,19 +130,26 @@ parMIEstimate(counts, method = c("ML", "MM", "Bayes", "CS", "Shrink", "KD", "KNN
   \code{\link[synRNASeqNet:parEntropyEstimate]{parEntropyEstimate}}
 }
 \examples{
-simData <- simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25, ppower = 0.73, noise = FALSE)
+simData <- simulatedData(p = 10, n = 50, mu = 100, sigma = 0.25,
+                        ppower = 0.73, noise = FALSE)
 counts <- simData$counts
 adjMat <- simData$adjMat
 
 miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 2)
 miMM <- parMIEstimate(counts, method = "MM", unit = "nat", nchips = 2)
-miBJ <- parMIEstimate(counts, method = "Bayes", unit = "nat", nchips = 2, priorHyperParam = "Jeffreys")
-miBB <- parMIEstimate(counts, method = "Bayes", unit = "nat", nchips = 2, priorHyperParam = "BLUnif")
-miBP <- parMIEstimate(counts, method = "Bayes", unit = "nat", nchips = 2, priorHyperParam = "Perks")
-miBM <- parMIEstimate(counts, method = "Bayes", unit = "nat", nchips = 2, priorHyperParam = "MiniMax")
+miBJ <- parMIEstimate(counts, method = "Bayes", unit = "nat",
+                      nchips = 2, priorHyperParam = "Jeffreys")
+miBB <- parMIEstimate(counts, method = "Bayes", unit = "nat",
+                      nchips = 2, priorHyperParam = "BLUnif")
+miBP <- parMIEstimate(counts, method = "Bayes", unit = "nat",
+                      nchips = 2, priorHyperParam = "Perks")
+miBM <- parMIEstimate(counts, method = "Bayes", unit = "nat", 
+                      nchips = 2, priorHyperParam = "MiniMax")
 miCS <- parMIEstimate(counts, method = "CS", unit = "nat", nchips = 2)
-miSH <- parMIEstimate(counts, method = "Shrink", unit = "nat", nchips = 2)
+miSH <- parMIEstimate(counts, method = "Shrink", unit = "nat",
+                      nchips = 2)
 miKD <- parMIEstimate(counts, method = "KD", nchips = 2)
-miKNN <- parMIEstimate(counts, method = "KNN", unit = "nat", k = 3, nchips = 2)
+miKNN <- parMIEstimate(counts, method = "KNN", unit = "nat", k = 3,
+                      nchips = 2)
 }
 \keyword{parMIEstimate}

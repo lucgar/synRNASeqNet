@@ -7,7 +7,8 @@
   Computing the Maximul Likelihood Entropy Estimate of \code{cellCounts}.
 }
 \usage{
-entropyBayes(cellCounts, unit = unit, priorHyperParam = priorHyperParam)
+entropyBayes(cellCounts, unit = unit,
+            priorHyperParam = priorHyperParam)
 }\arguments{
   \item{cellCounts}{
     an integer vector (or matrix) representing the number of times each particular
@@ -58,7 +59,8 @@ entropyBayes(cellCounts, unit = unit, priorHyperParam = priorHyperParam)
   \link[synRNASeqNet:entropyCS]{entropyCS}, \link[synRNASeqNet:entropyShrink]{entropyShrink}}
 }
 \examples{
-simData <- simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25, ppower = 0.73, noise = FALSE)
+simData <- simulatedData(p = 50, n = 100, mu = 100, sigma = 0.25,
+                        ppower = 0.73, noise = FALSE)
 cellCounts <- table(simData$counts[1, ])
 eBJ <- entropyBayes(cellCounts, unit = "nat", priorHyperParam = "Jeffreys")
 eBB <- entropyBayes(cellCounts, unit = "nat", priorHyperParam = "BLUnif")
