@@ -6,7 +6,7 @@
   Synthetic RNA-Seq Network Generation and Mutual Information Estimates
 }
 \description{
-  This package implements various estimators of mutual information, such
+  The synRNASeqNet package implements various estimators of mutual information, such
   as the maximum likelihood and the Millow-Madow estimator, various Bayesian estimators,
 	the shrinkage estimator, and the Chao-Shen estimator. It also offers wrappers
 	to the kNN and kernel density estimators.
