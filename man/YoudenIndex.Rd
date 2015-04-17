@@ -38,8 +38,7 @@ counts <- simData$counts
 adjMat <- simData$adjMat
 
 miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 2)
-require(minet)
-miML <- aracne(miML, eps = 0.5)
+miML <- aracne.a(miML, eps = 0.5)
 
 valML <- performanceNET(miML, adjMat)
 YI <- YoudenIndex(valML)

@@ -42,7 +42,7 @@ mainNetFunction(counts, adjMat, nchips, plotPath = "",
     curves like ROC and PR.
   }
   \item{resTable}{
-    a matrix with the better performces for each method.
+    a matrix with the best performces for each method.
   }
 }
 \author{
@@ -56,11 +56,11 @@ mainNetFunction(counts, adjMat, nchips, plotPath = "",
   \code{\link[synRNASeqNet:simulatedData]{simulatedData}}
 }
 \examples{
-simData <- simulatedData(p = 10, n = 50, mu = 100, sigma = 0.25,
+simData <- simulatedData(p = 5, n = 10, mu = 50, sigma = 0.25,
                         ppower = 0.73, noise = FALSE)
 counts <- simData$counts
 adjMat <- simData$adjMat
 
-netData <- mainNetFunction(counts, adjMat, nchips = 2)
+#netData <- mainNetFunction(counts, adjMat, nchips = 2)
 }
 \keyword{mainNetFunction}

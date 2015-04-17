@@ -130,22 +130,14 @@ parMIEstimate(counts,
   \code{\link[synRNASeqNet:parEntropyEstimate]{parEntropyEstimate}}
 }
 \examples{
-simData <- simulatedData(p = 10, n = 50, mu = 100, sigma = 0.25,
+simData <- simulatedData(p = 5, n = 10, mu = 100, sigma = 0.25,
                         ppower = 0.73, noise = FALSE)
 counts <- simData$counts
 adjMat <- simData$adjMat
 
 miML <- parMIEstimate(counts, method = "ML", unit = "nat", nchips = 2)
-miMM <- parMIEstimate(counts, method = "MM", unit = "nat", nchips = 2)
 miBJ <- parMIEstimate(counts, method = "Bayes", unit = "nat",
                       nchips = 2, priorHyperParam = "Jeffreys")
-miBB <- parMIEstimate(counts, method = "Bayes", unit = "nat",
-                      nchips = 2, priorHyperParam = "BLUnif")
-miBP <- parMIEstimate(counts, method = "Bayes", unit = "nat",
-                      nchips = 2, priorHyperParam = "Perks")
-miBM <- parMIEstimate(counts, method = "Bayes", unit = "nat", 
-                      nchips = 2, priorHyperParam = "MiniMax")
-miCS <- parMIEstimate(counts, method = "CS", unit = "nat", nchips = 2)
 miSH <- parMIEstimate(counts, method = "Shrink", unit = "nat",
                       nchips = 2)
 miKD <- parMIEstimate(counts, method = "KD", nchips = 2)

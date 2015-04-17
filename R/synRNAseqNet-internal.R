@@ -1,2 +1,2 @@
 .__global__ <-
-c("counts")
+c("counts", "testNet", "gsNet")
